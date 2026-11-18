@@ -15,19 +15,9 @@
   });
   $$('#menu a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); mb.setAttribute('aria-expanded', false); mb.textContent = 'Menú'; }));
 
-  /* ── hero: las fotos cambian con el scroll y traen su color de fondo ── */
-  const hero = $('[data-hero]'), frames = $$('.hero-frames figure');
-  let cur = 0;
-  const onScroll = () => {
-    const y = scrollY;
-    top.classList.toggle('solid', y > hero.offsetHeight - innerHeight || menu.classList.contains('open'));
-    const p = Math.min(.999, Math.max(0, y / (hero.offsetHeight - innerHeight)));
-    const i = Math.floor(p * frames.length);
-    if (i !== cur) {
-      frames[cur].classList.remove('on'); frames[i].classList.add('on'); cur = i;
-      hero.style.setProperty('--g', frames[i].dataset.g);
-    }
-  };
+  /* ── barra sólida al salir de la foto ── */
+  const hero = $('[data-hero]');
+  const onScroll = () => top.classList.toggle('solid', scrollY > hero.offsetHeight - 80 || menu.classList.contains('open'));
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
   /* ── cartelera: qué día es en Buenos Aires y si estamos abiertos ── */

@@ -10,15 +10,12 @@ IG = lambda i: R / 'assets' / 'raw' / 'ig' / i
 MAPA = {
  # retratos del hero (2:3)
  'h-barra':     ('r_DL-9h0zSv0j.jpg', 1000, 1500, .5, .45),
- 'h-fachada':   ('r_DNRTe1aBys2.jpg', 1000, 1500, .5, .35),
- 'h-sirviendo': ('r_DbohzLbBr4s.jpg', 1000, 1500, .5, .0),
- 'h-botellas':  ('r_Da5mCR_xm54.jpg', 1000, 1500, .5, .0, .86),
- 'h-descorche': ('r_DLtDtwnsFx0.jpg', 1000, 1500, .5, .3),
+ 'hero-ancha':  ('p_DKQHZm1i3JQ.jpg', 1600, 1000, .5, .42),  # portada en compu
  # intro
  'barrica':     ('r_DNbgAd9B5In.jpg', 900, 600, .5, 1.0),
  # noches (paneles altos)
  'n-feria':     ('r_DPPaJxRgbUb.jpg', 900, 1400, .5, .5),
- 'n-cata':      ('p_DKQHZm1i3JQ.jpg', 1100, 1400, .45, .5),
+ 'n-cata':      ('r_DbohzLbBr4s.jpg', 1100, 1400, .5, .0, .88),
  'n-noches':  ('p_DfQTK0Igegt.jpg', 1100, 1400, .5, .5),
  'n-copas':     ('r_DOKAlRkARBW.jpg', 900, 1400, .5, .55),
  # galería
@@ -26,7 +23,7 @@ MAPA = {
  'g-barra':     ('r_DLnlfvty08g.jpg', 1250, 1000, .5, .6),
  'g-dupla':     ('r_DL80RBCNf-B.jpg', 900, 1200, .5, .35),
  'g-rosados':   ('r_DTOBlDlASeB.jpg', 1250, 1000, .5, .05),
- 'reserva':     ('p_DKQHZm1i3JQ.jpg', 1400, 900, .5, .45),
+ 'reserva':     ('r_DLtDtwnsFx0.jpg', 1000, 1250, .5, .3),
 }
 out = R / 'assets' / 'img'
 for f in out.glob('*.jpg'): f.unlink()
