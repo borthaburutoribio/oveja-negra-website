@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Muestra (noindex). En la web final: Allow: / y Sitemap: <dominio>/sitemap.xml
