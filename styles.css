@@ -156,8 +156,9 @@ legend{font-weight:700;margin-bottom:14px;padding:0}
 
 /* ═══ RESEÑAS (campo rojo) ═══ */
 .resenas{background:var(--red);color:var(--red-ink);padding:150px var(--m) 140px}
-.spread p{display:flex;justify-content:space-between;font-family:var(--display);font-stretch:62%;font-weight:900;font-size:clamp(56px, 9vw, 150px);line-height:.9;letter-spacing:-.02em;text-transform:uppercase}
-.spread p+p{margin-top:.18em}
+.spread p{display:flex;justify-content:space-between;gap:.3em;font-family:var(--display);font-stretch:62%;font-weight:900;font-size:clamp(52px, 10vw, 170px);line-height:.9;letter-spacing:-.02em;text-transform:uppercase}
+.spread p+p{margin-top:.12em}
+.spread p.r{justify-content:flex-end}
 .spread-by{display:flex;justify-content:space-between;margin-top:36px;font-size:18px;font-weight:700}
 .mas-resenas{display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--m);row-gap:40px;margin-top:120px}
 .mas-resenas figure{grid-column:span 6}
@@ -273,7 +274,7 @@ legend{font-weight:700;margin-bottom:14px;padding:0}
   .g1{width:70%}.g2{width:84%;margin-left:auto}.g3{width:100%}.g4{width:56%}
   .g2,.g3,.g4{margin-top:64px}
   .resenas{padding:100px 16px}
-  .spread p{font-size:13vw;flex-wrap:wrap}
+  .spread p{font-size:13.5vw}
   .spread-by{flex-direction:column;gap:4px;font-size:15px}
   .spread-by span:nth-child(2){align-self:center}.spread-by span:nth-child(3){align-self:flex-end}
   .mas-resenas{display:block;margin-top:72px}
