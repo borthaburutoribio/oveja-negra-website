@@ -12,7 +12,7 @@ MAPA = {
  'h-barra':     ('r_DL-9h0zSv0j.jpg', 1000, 1500, .5, .45),
  'hero-ancha':  ('p_DKQHZm1i3JQ.jpg', 1600, 1000, .5, .42),  # portada en compu
  # intro
- 'barrica':     ('r_DNbgAd9B5In.jpg', 900, 600, .5, 1.0),
+ 'fachada':     ('r_DNRTe1aBys2.jpg', 900, 1200, .5, .3),
  # noches (paneles altos)
  'n-feria':     ('r_DPPaJxRgbUb.jpg', 900, 1400, .5, .5),
  'n-cata':      ('r_DbohzLbBr4s.jpg', 1100, 1400, .5, .0, .88),
